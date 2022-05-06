@@ -1,0 +1,11 @@
+version: '3'
+
+services:
+  argenv:
+    build:
+      context: .
+      args:
+        - ARG_WITH_DEFAULT=11
+        - ARG_WITHOUT_DEFAULT=12
+    environment:
+      - EXTERNAL_ENV_ENV=21
